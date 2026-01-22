@@ -1,0 +1,339 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #444;
+}
+.playfair { font-family: 'Playfair Display', serif; }
+.text-pink-logo { color: hsl(325, 58%, 81%); text-decoration: none; }
+.color-pink { color: #a12056; }
+.bg-soft-pink { background-color: #cc94a7; }
+.letter-spacing-1 { letter-spacing: 1px; }
+.letter-spacing-2 { letter-spacing: 2px; }
+
+.hero {
+    background: url('image/blog1.webp') center/cover no-repeat;
+    height: 90vh;
+}
+.hero-overlay {
+    background: rgba(211, 150, 175, 0.603);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.hero-text {
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 10px;
+    margin: 0;
+}
+.hero-text.highlight {
+    color: #6a0dad;
+}
+
+.stat-icon { font-size: 2.5rem; opacity: 0.6; }
+
+.course-img {
+    width: 110px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.btn-join {
+    color: #750a40;
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-decoration: none;
+    border-bottom: 2px solid #99174d;
+}
+
+.trainer-img { border-radius: 3px; }
+
+.cta-pink {
+    background-color: #d8b2c5;
+}
+.divider-white {
+    width: 50px;
+    height: 2px;
+    background: white;
+}
+
+.read-more {
+    color: #e38eb2;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.arrow-circle {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #e38eb2;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+}
+
+.footer { background-color: #f8f9fa; border-top: 1px solid #eee; }
+.footer-nav a { color: #666; text-decoration: none; }
+.social-icons a {
+    color: #999;
+    border: 1px solid #ddd;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 33px;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+.social-icons a:hover {
+    background: #e38eb2;
+    color: white;
+    border-color: #e38eb2;
+}
+
+@media (max-width: 768px) {
+    .hero-text { font-size: 2.5rem; letter-spacing: 5px; }
+}
+
+.header-service {
+    background: linear-gradient(rgba(227, 142, 178, 0.5), rgba(227, 142, 178, 0.5)), 
+                url('image/yoga1.jpg') center/cover no-repeat;
+    height: 400px;
+}
+
+.tab-item {
+    cursor: pointer;
+    min-width: 150px;
+    color: #999;
+    transition: 0.3s;
+}
+
+.tab-item.active {
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+}
+
+.btn-outline-pink {
+    border: 1px solid #e38eb2;
+    color: #e38eb2;
+}
+
+.btn-outline-pink:hover {
+    background-color: #e38eb2;
+    color: white;
+}
+
+.bg-pink-gradient {
+    background: linear-gradient(135deg, #bc6c9c, #8e44ad);
+}
+
+.text-pink {
+    color: #bc6c9c;
+}
+
+/* Testimonial */
+.testimonial-box p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.header-about {
+    background: linear-gradient(rgba(227, 142, 178, 0.5), rgba(227, 142, 178, 0.5)), 
+                url('image/about.jpg') center/cover no-repeat;
+    height: 450px;
+}
+
+.stat-box-small {
+    width: 80px;
+    height: 80px;
+    background-color: #fdf7f9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bc6c9c;
+    font-size: 1.2rem;
+}
+
+.timeline-container {
+    padding-top: 50px;
+}
+.timeline-line {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    right: 15%;
+    height: 2px;
+    background: #eee;
+    z-index: 1;
+}
+.timeline-item {
+    position: relative;
+    z-index: 2;
+    background: transparent;
+}
+.timeline-icon {
+    font-size: 2rem;
+    opacity: 0.6;
+}
+.dot-active {
+    width: 15px;
+    height: 15px;
+    background: #8e44ad;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: #bc6c9c;
+    box-shadow: none;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+.badge-blog {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #8e44ad;
+    color: white;
+    padding: 4px 12px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.border-bottom-pink {
+    border-bottom: 2px solid #bc6c9c !important;
+}
+
+.header-banner {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+.header-banner::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(188, 108, 156, 0.4); /* Overlay pink */
+}
+
+.header-banner .container {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-send-message {
+    background-color: transparent;
+    color: #bc6c9c;
+    border: none;
+    border-bottom: 2px solid #bc6c9c;
+    border-radius: 0;
+    transition: 0.3s;
+}
+
+.btn-send-message:hover {
+    color: #8e44ad;
+    border-bottom-color: #8e44ad;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    background-color: #fdf7f9 !important;
+}
+
+.form-control::placeholder {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #aaa;
+}
+
+.overlay-text {
+    position: relative;
+    z-index: 2;
+    letter-spacing: 5px;
+}
+
+.social-icons i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    color: #999;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    background-color: #bc6c9c;
+    color: white;
+    border-color: #bc6c9c;
+}
+
+.bg-purple-journey {
+    background-color: #bc6c9c;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #fdf7f9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.journey-item {
+    transition: transform 0.3s;
+}
+
+.journey-icon {
+    font-size: 2.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
+
+.tab-custom {
+    color: #bc6c9c !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    border: 1px solid #ddd !important;
+    padding: 12px 25px !important;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.tab-custom.active {
+    background-color: #bc6c9c !important;
+    color: white !important;
+    border-color: #bc6c9c !important;
+}
+
+.tab-custom:hover:not(.active) {
+    background-color: #fdf7f9 !important;
+}
+
+.tab-pane.fade {
+    transition: opacity 0.4s ease-in-out;
+}
